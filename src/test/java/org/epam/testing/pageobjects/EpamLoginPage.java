@@ -2,6 +2,8 @@ package org.epam.testing.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import ru.yandex.qatools.allure.annotations.Step;
 
 import java.util.concurrent.TimeUnit;
@@ -54,6 +56,8 @@ public class EpamLoginPage {
     public void open() {
 
     driverHere.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
+
     driverHere.get(epamLoginPageUrl);
     driverHere.manage().window().maximize();
 }

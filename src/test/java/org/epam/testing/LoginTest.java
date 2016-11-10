@@ -3,6 +3,7 @@ package org.epam.testing;
 import org.epam.testing.pageobjects.EpamLoginPage;
 import org.epam.testing.components.FailureListener;
 import org.epam.testing.testdata.LoginData;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,6 +12,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.yandex.qatools.allure.annotations.Step;
@@ -91,7 +94,10 @@ public class LoginTest {
                 break;
             case "chrome":
                 System.setProperty(sysProperty[3], pathToDriver);
-                myPersonalDriver = new ChromeDriver();
+                myPersonalDriver=new ChromeDriver();
+
+
+
                 break;
             case "phantom":
                 System.setProperty(sysProperty[4], pathToDriver);
@@ -113,6 +119,8 @@ public class LoginTest {
 
 
         epamLoginPage.open();
+
+        new WebDriverWait(myPersonalDriver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[contains(.,'EPAM framework Wishes…')]")));
 
     }
     @Step("LOGIN")
