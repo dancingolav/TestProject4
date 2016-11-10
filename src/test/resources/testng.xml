@@ -4,6 +4,8 @@
 
 <suite name="TestAll">
 
+
+
     <listeners>
         <listener class-name="org.epam.testing.components.FailureListener"/>
     </listeners>
@@ -33,12 +35,13 @@
              <parameter name="pathToDriver"  value="D:\\PersonalDrivers\\operadriver.exe"/>
               =================================================================================-->
 
-             <parameter name="browser"  value="phantom"/>
+           <!--  <parameter name="browser"  value="phantom"/>
              <parameter name="pathToDriver"  value="D:\\PersonalDrivers\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe"/>
 
+-->
 
-
-
+    <parameter name="browser"  value="chrome"/>
+    <parameter name="pathToDriver"  value="D:\\PersonalDrivers\\chromedriver.exe"/>
 
     <test name="LoginTest">
         <classes>

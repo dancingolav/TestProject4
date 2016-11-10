@@ -98,17 +98,6 @@ public class LoginTest {
                 Capabilities caps = new DesiredCapabilities().phantomjs();
                 ((DesiredCapabilities) caps).setJavascriptEnabled(true);
                 ((DesiredCapabilities) caps).setCapability("takesScreenshot", true);
-
-/*
-                Capabilities caps = new DesiredCapabilities();
-                ((DesiredCapabilities) caps).setJavascriptEnabled(true);
-                ((DesiredCapabilities) caps).setCapability("takesScreenshot", true);
-                ((DesiredCapabilities) caps).setCapability(
-                        PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
-                        "your custom path\\phantomjs.exe"
-                );
-                WebDriver   driver = new  PhantomJSDriver(caps);*/
-
                 myPersonalDriver = new  PhantomJSDriver(caps);
 
         }
