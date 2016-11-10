@@ -41,7 +41,7 @@
 -->
 
     <parameter name="browser"  value="chrome"/>
-    <parameter name="pathToDriver"  value="D://PersonalDrivers//chromedriver.exe"/>
+    <parameter name="pathToDriver"  value="D:/PersonalDrivers/chromedriver.exe"/>
 
     <test name="LoginTest">
         <classes>

@@ -120,8 +120,12 @@ public class LoginTest {
 
         epamLoginPage.open();
 
-        new WebDriverWait(myPersonalDriver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[contains(.,'EPAM framework Wishes')]")));
-
+        //new WebDriverWait(myPersonalDriver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[contains(.,'EPAM framework Wishes')]")));
+        try {
+        Thread.sleep(8000);
+        }
+        catch ( Exception e){
+        }
     }
     @Step("LOGIN")
     @Test(dataProviderClass=LoginData.class, dataProvider="dataforlogin")
