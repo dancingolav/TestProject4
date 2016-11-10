@@ -40,8 +40,8 @@
 
 -->
 
-    <parameter name="browser"  value="ie"/>
-    <parameter name="pathToDriver"  value="D://PersonalDrivers//IEDriverServer.exe"/>
+    <parameter name="browser"  value="chrome"/>
+    <parameter name="pathToDriver"  value="D://PersonalDrivers//chromedriver.exe"/>
 
     <test name="LoginTest">
         <classes>
