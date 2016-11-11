@@ -40,8 +40,8 @@
 
 -->
 
-    <parameter name="browser"  value="chrome"/>
-    <parameter name="pathToDriver"  value="D://PersonalDrivers//chromedriver.exe"/>
+    <parameter name="browser"   value="phantom"/>
+    <parameter name="pathToDriver"  value="D:\\PersonalDrivers\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe"/>
 
     <test name="LoginTest">
         <classes>
