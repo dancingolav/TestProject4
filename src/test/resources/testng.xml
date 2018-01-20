@@ -41,7 +41,7 @@
 -->
 
     <parameter name="browser"   value="phantom"/>
-    <parameter name="pathToDriver"  value="D:\\PersonalDrivers\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe"/>
+    <parameter name="pathToDriver"  value="C:\\Selenium\phantomjs.exe"/>
 
     <test name="LoginTest">
         <classes>
